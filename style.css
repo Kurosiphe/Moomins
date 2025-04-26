@@ -1,12 +1,19 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #1777d1;
     color: black;
+}
+
+.container {
+    width: 80%;
+    max-width: 1600px;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .image-section {
@@ -17,34 +24,14 @@ body {
 
 }
 
-.image-box img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
 .image-box {
-    width: 300px;
-    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border-radius: 10px;
-}
-
-.container {
-    width: 80%;
-    max-width: 1200px;
-    text-align: center;
-    background-color: aqua;
-    padding: 20px;
-    border-radius: 10px;
 }
 
 .section-title {
-    font-size: 24px;
     font-weight: bold;
     margin-top: 20px;
     border-radius: 15px;
@@ -52,31 +39,34 @@ body {
 
 .contact {
     margin-top: 20px;
-    font-size: 28px;
     font-weight: bold;
 }
 
-h1 {
-    background-color: palevioletred;
-    border-radius: 15px
+h1, h2, p {
+    border-radius: 15px;
+    padding: 7px;
 }
 
-h2 {
+h1, h2 {
     background-color: palevioletred;
-    margin-right: 0px;
-    margin-left: 0px;
-    border-radius: 15px
+    font-size: 1.9em;
 }
 
-h3 {
+h3, p {
     background-color: rgb(248, 247, 249);
-    border-radius: 15px
+    color: black;
 }
 
 p{
+    font-size: 1.7em;
+}
 
-    background-color: rgb(248, 247, 249);
-    border-radius: 15px;
-    color: black;
-    font-size: 1.5em;
+@media (max-width: 768px) {
+    p{
+        font-size: 1em;
+    }
+
+    h1, h2 {
+        font-size: 1.2em;
+    }
 }
